@@ -1,5 +1,5 @@
 from fastapi.security import OAuth2PasswordBearer
-from app.core.database import SessionLocal
+from coderag.core.database import SessionLocal
 
 
 # db connection
@@ -12,4 +12,4 @@ def get_db():
 
 
 # authorization
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="api/v1/auth/login")
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="auth/login")

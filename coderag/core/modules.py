@@ -8,9 +8,9 @@ from typing import List
 from sqladmin import Admin
 
 # import
-from app.core.database import engine
-from app.models.admin import UserAdmin
-from app.api.routers.api import router
+from coderag.core.database import engine
+from coderag.models.admin import UserAdmin
+from coderag.v1.api import router
 # from app.core.settings import config
 
 

@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Boolean, Integer, DateTime, func
-from app.core.database import Base
+from coderag.core.database import Base
 
 
 class CommonModel(Base):

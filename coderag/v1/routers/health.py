@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from app.api.endpoints.health.health import health_module
+from coderag.v1.endpoints.health.health import health_module
 
 
 health_router = APIRouter()

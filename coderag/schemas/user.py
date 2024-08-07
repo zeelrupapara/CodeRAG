@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 from datetime import datetime
 from typing import Optional
-from app.models.user import UserRole
+from coderag.models.user import UserRole
 
 
 class UserBase(BaseModel):

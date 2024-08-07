@@ -1,7 +1,7 @@
 # fastapi
 from fastapi import FastAPI
-from app.core.modules import init_routers, make_middleware
-from app.core.logger import load_logger
+from coderag.core.modules import init_routers, make_middleware
+from coderag.core.logger import load_logger
 from dotenv import load_dotenv
 import logging
 import os
@@ -18,10 +18,12 @@ def create_app() -> FastAPI:
 
     # initialize app
     app_ = FastAPI(
-        title="FastAPI starter kit",
-        description="FastAPI starter kit that is needed for every fastapi project.",
+        title="CodeRAG",
+        description="Talk with your code using LLM",
         version="1.0.0",
         docs_url="/api/v1/docs",
+        redoc_url="/api/v1/redoc",
+        openapi_url="/api/v1/openapi.json",
         middleware=make_middleware(),
         debug=os.getenv("DEBUG"),
     )

@@ -9,11 +9,11 @@ from passlib.context import CryptContext
 from jose import JWTError, jwt
 
 # import
-from app.models import user as UserModel
-from app.schemas.user import UserCreate, UserUpdate, Token
-from app.core.settings import SECRET_KEY, REFRESH_SECRET_KEY, ALGORITHM
-from app.core.settings import ACCESS_TOKEN_EXPIRE_MINUTES
-from app.core.dependencies import get_db, oauth2_scheme
+from coderag.models import user as UserModel
+from coderag.schemas.user import UserCreate, UserUpdate, Token
+from coderag.core.settings import SECRET_KEY, REFRESH_SECRET_KEY, ALGORITHM
+from coderag.core.settings import ACCESS_TOKEN_EXPIRE_MINUTES
+from coderag.core.dependencies import get_db, oauth2_scheme
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 

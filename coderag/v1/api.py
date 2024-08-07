@@ -1,6 +1,6 @@
 from fastapi import APIRouter
-from app.api.routers.user import user_router
-from app.api.routers.health import health_router
+from coderag.v1.routers.user import user_router
+from coderag.v1.routers.health import health_router
 
 router = APIRouter(prefix="/api/v1")
 

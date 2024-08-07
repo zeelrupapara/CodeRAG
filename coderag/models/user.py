@@ -1,6 +1,6 @@
 from sqlalchemy import Column, String, Enum
 from enum import Enum as PythonEnum
-from app.core.database import Base
+from coderag.core.database import Base
 from .common import CommonModel
 
 

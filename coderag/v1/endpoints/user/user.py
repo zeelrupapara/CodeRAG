@@ -5,9 +5,9 @@ from sqlalchemy.orm import Session
 import logging
 
 # import
-from app.core.dependencies import get_db
-from app.schemas.user import User, UserCreate, UserUpdate
-from app.api.endpoints.user import functions as user_functions
+from coderag.core.dependencies import get_db
+from coderag.schemas.user import User, UserCreate, UserUpdate
+from coderag.v1.endpoints.user import functions as user_functions
 
 user_module = APIRouter()
 

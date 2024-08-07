@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Depends, HTTPException, status
-from app.core.dependencies import get_db
+from coderag.core.dependencies import get_db
 from sqlalchemy.orm import Session
 import logging
 

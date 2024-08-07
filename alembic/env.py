@@ -5,8 +5,8 @@ from sqlalchemy import pool
 
 from alembic import context
 
-from app.core.database import Base
-from app.models.user import User, metadata
+from coderag.core.database import Base
+from coderag.models.user import User, metadata
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
 config = context.config
