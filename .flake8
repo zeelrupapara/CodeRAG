@@ -1,0 +1,8 @@
+[flake8]
+extend-ignore = E203,E122
+max-line-length = 160
+exclude = .git,__pycache__,.ci,.python,venv,.env,alembic/**,
+max-complexity = 18
+statistics = True
+select = F,E,W,C
+filename = *.py
